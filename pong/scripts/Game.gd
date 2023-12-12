@@ -14,15 +14,19 @@ func _ready():
 	ball.global_position = ball_spwan_location.global_position
 	ball_container.add_child(ball)
 
-func add_goal(player):
+func add_goal(player):	
+	reset_ball()
+	update_score(player)
+	show_new_score()
+	
+func reset_ball():
+	ball.global_position = ball_spwan_location.global_position
+	ball.reset_movement()
+	
+func update_score(player):
 	if player == 1: player_one_points += 1
 	else: player_two_points += 1
-	ball.global_position = ball_spwan_location.global_position
-	ball.speed *= -1
+	
+func show_new_score():	
 	print("P1: " + str(player_one_points))
 	print("P2: " + str(player_two_points))
-	
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
