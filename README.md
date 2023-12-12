@@ -14,5 +14,5 @@
 </p>
 
 <p align="center">
-    <img src="public/calculator/1.png" alt="Pong Clone" />
+    <img src="1.png" alt="Pong Clone" />
 </p>
