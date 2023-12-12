@@ -15,11 +15,11 @@ func _ready():
 	ball_container.add_child(ball)
 
 func add_goal(player):	
-	reset_ball()
+	$WaitNewBallTimer.start()
 	update_score(player)
-	show_new_score()
+	show_new_score()		
 	
-func reset_ball():
+func _on_WaitNewBallTimer_timeout():
 	ball.global_position = ball_spwan_location.global_position
 	ball.reset_movement()
 	
