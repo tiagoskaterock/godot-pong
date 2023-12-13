@@ -2,16 +2,26 @@ extends KinematicBody2D
 
 var direction = Vector2.RIGHT
 
-const initial_speed = 50
+var initial_speed = 50
 var speed = initial_speed
-const accelerate_rate = 5
+var accelerate_rate = 5
 
-const initial_vertical_move = 5
+var initial_vertical_move = 5
 var vertical_move = initial_vertical_move
-const increase_vertical_move = 20
+var increase_vertical_move = 20
 var v_move = vertical_move
 
 var dir = 'right'
+
+func _ready():
+	var difficulty = get_parent().get_parent().difficulty
+	initial_speed *= difficulty
+	speed = initial_speed
+	accelerate_rate *= difficulty
+	initial_vertical_move *= difficulty
+	vertical_move = initial_vertical_move
+	increase_vertical_move *= difficulty
+	v_move = vertical_move
 
 func _physics_process(delta):
 	var collision = move_and_collide(direction * speed * delta)

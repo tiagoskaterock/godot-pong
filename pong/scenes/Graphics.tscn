@@ -14,10 +14,18 @@ position = Vector2( 320, 200 )
 texture = ExtResource( 1 )
 normal_map = ExtResource( 1 )
 
-[node name="ScoreLabel" type="Label" parent="."]
-margin_left = 301.0
+[node name="ScoreLabelPlayerOne" type="Label" parent="."]
+margin_left = 279.0
 margin_top = 24.0
-margin_right = 341.0
+margin_right = 319.0
 margin_bottom = 38.0
-text = "0 - 0"
+text = "0"
+align = 1
+
+[node name="ScoreLabelPlayerTwo" type="Label" parent="."]
+margin_left = 322.0
+margin_top = 24.0
+margin_right = 362.0
+margin_bottom = 38.0
+text = "0"
 align = 1

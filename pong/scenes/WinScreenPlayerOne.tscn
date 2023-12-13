@@ -1,0 +1,17 @@
+[gd_scene format=2]
+
+[node name="WinScreen" type="Control"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 640.0
+margin_bottom = 400.0
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+margin_left = 267.0
+margin_top = 193.0
+margin_right = 373.0
+margin_bottom = 207.0
+text = "Player One Wins"
+align = 1
+valign = 1
