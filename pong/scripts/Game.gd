@@ -1,7 +1,7 @@
 extends Node2D
 
 const win_points = 3
-var difficulty = 2
+var difficulty = 1
 
 onready var ball_container = $Ballcontainer
 onready var ball_spwan_location = $Ballcontainer/BallSpawnLocation
