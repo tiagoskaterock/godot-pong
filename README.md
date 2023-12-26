@@ -1,11 +1,3 @@
-<h1 align="center">Pong Clone</h1>
-
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=godot" />
-  </a>
-</p>
-
 <h1 align="center">Pong</h1>
 
 <p align="center">
