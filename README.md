@@ -50,8 +50,3 @@ Pong é um portal para uma época onde os jogos eram simples e a diversão era i
 <p align="center">
     <img src="1.gif" alt="Pong" />
 </p>
-
-
-<p align="center">
-    <img src="1.gif" alt="Pong Clone" />
-</p>
